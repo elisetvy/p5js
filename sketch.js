@@ -31,4 +31,8 @@ function draw() {
   // grass
   fill("green");
   rect(0, 200, 600, 200); // x, y, width, height
+
+  text("🌸", 100, 250); // x, y
+  text("🐞", 300, 250);
+  textSize(75);
 }
