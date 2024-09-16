@@ -32,6 +32,7 @@ function draw() {
   fill("green");
   rect(0, 200, 600, 200); // x, y, width, height
 
+  // open emoji keyboard w/ control + command + space
   text("🌸", 100, 250); // x, y
   text("🐞", 300, 250);
   textSize(75);
