@@ -18,7 +18,7 @@ function draw() {
   // big gray mountains
   stroke(0);
   fill(80);
-  triangle(-40, 300, 75, 100, 250, 300); //  point 1 x, point 1 y, point 2 x, point 2 y, etc
+  triangle(-40, 300, 75, 100, 250, 300); //  x1, y1, x2, y2, x3, y3
   triangle (100, 300, 300, 100, 500, 300);
 
   // grass
