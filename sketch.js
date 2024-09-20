@@ -31,6 +31,8 @@ function draw() {
   // cloud
   fill(255);
   ellipse(cloudOneX, 50, 80, 40); // center x, center y, width, height
+  ellipse(cloudOneX - 40, 100, 60, 20);
+  ellipse(cloudOneX + 20, 150, 40, 10);
 
   // sets the x coordinate to the frame count
   // resets at left edge
