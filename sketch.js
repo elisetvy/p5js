@@ -35,12 +35,13 @@ function draw() {
   ellipse(cloudOneX + 20, 150, 40, 10);
 
   // growing trees
+
   // trunk
   fill("rgb(118, 80, 72)");
   rect(40, 270, 15, 50);
   // leaves
   fill("green");
-  triangle(25, 270, 45, 240 - frameCount % 290, 70, 270);
+  triangle(25, 270, 45, 240 - frameCount % 290, 70, 270); // top corner of triangle needs to move up on canvas each time draw() runs
 
   // trunk
   fill("rgb(118, 80, 72)");
