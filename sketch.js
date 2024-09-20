@@ -34,13 +34,21 @@ function draw() {
   ellipse(cloudOneX - 40, 100, 60, 20);
   ellipse(cloudOneX + 20, 150, 40, 10);
 
-  // growing tree
+  // growing trees
   // trunk
   fill("rgb(118, 80, 72)");
   rect(40, 270, 15, 50);
   // leaves
   fill("green");
   triangle(25, 270, 45, 240 - frameCount % 290, 70, 270);
+
+  // trunk
+  fill("rgb(118, 80, 72)");
+  rect(340, 330, 15, 50);
+  // leaves
+  fill("green");
+  triangle(325, 330, 345, 240 - frameCount % 290, 370, 330);
+
 
   // sets the x coordinate to the frame count
   // resets at left edge
