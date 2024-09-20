@@ -61,7 +61,7 @@ function draw() {
   // resets at left edge
   cloudOneX = frameCount % width;
 
-  // set shooting star to random location
+  // set shooting star to random location every time draw() runs
   lineXone = random(0, width); // random number between 0 and width
   lineYone = random(0, height / 2); // only want stars in top half of canvas
 
