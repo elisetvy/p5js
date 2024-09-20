@@ -1,3 +1,5 @@
+let cloudOneX = 50;
+
 function setup() {
   createCanvas(400, 400); // width, height
 }
@@ -27,7 +29,11 @@ function draw() {
 
   // cloud
   fill(255);
-  ellipse(50, 50, 80, 40); // center x, center y, width, height
+  ellipse(cloudOneX, 50, 80, 40); // center x, center y, width, height
+
+  // sets the x coordinate to the frame count
+  // resets at left edge
+  cloudOneX = frameCount % width;
 
 // displays the x and y position of the mouse on the canvas
 fill(255) // white text
