@@ -25,6 +25,10 @@ function draw() {
   fill("rgb(50, 76, 50)");
   rect(0, 300, 400, 100); // upper left point (x, y), width, height
 
+  // cloud
+  fill(255);
+  ellipse(50, 50, 80, 40); // center x, center y, width, height
+
 // displays the x and y position of the mouse on the canvas
 fill(255) // white text
 text(`${mouseX}, ${mouseY}`, 20, 20);
