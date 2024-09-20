@@ -6,6 +6,7 @@ function setup() {
 
 function draw() {
   background("navy");
+  frameRate(15); // set frame rate to 15 (default is 60 for most computers)
 
   // moon
   fill(255);
