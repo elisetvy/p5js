@@ -1,4 +1,6 @@
 let cloudOneX = 50;
+let lineXone = 0;
+let lineYone = 0;
 
 function setup() {
   createCanvas(400, 400); // width, height
@@ -7,6 +9,10 @@ function setup() {
 function draw() {
   background("navy");
   frameRate(15); // set frame rate to 15 (default is 60 for most computers)
+
+  // shooting star
+  stroke("yellow");
+  line(lineXone, lineYone, lineXone + 30, lineYone - 30); // x1, y1, x2, y2
 
   // moon
   fill(255);
@@ -55,7 +61,11 @@ function draw() {
   // resets at left edge
   cloudOneX = frameCount % width;
 
-// displays the x and y position of the mouse on the canvas
-fill(255) // white text
-text(`${mouseX}, ${mouseY}`, 20, 20);
+  // set shooting star to random location
+  lineXone = random(0, width);
+  lineYone = random(0, height / 2);
+
+  // displays the x and y position of the mouse on the canvas
+  // fill(255) // white text
+  // text(`${mouseX}, ${mouseY}`, 20, 20);
 }
