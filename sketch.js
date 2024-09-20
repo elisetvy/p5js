@@ -1,9 +1,14 @@
 function setup() {
-  createCanvas(600, 400); // width, height
+  createCanvas(400, 400); // width, height
 }
 
 function draw() {
-  background(220);
+  background("navy");
+
+  // moon
+  fill(255);
+  stroke(0);
+  circle(350, 50, 100); // x, y, diameter of circle
 
 // displays the x and y position of the mouse on the canvas
 fill(255) // white text
