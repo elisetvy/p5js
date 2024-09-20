@@ -21,6 +21,10 @@ function draw() {
   triangle(-40, 300, 75, 100, 250, 300); //  point 1 x, point 1 y, point 2 x, point 2 y, etc
   triangle (100, 300, 300, 100, 500, 300);
 
+  // grass
+  fill("rgb(50, 76, 50)");
+  rect(0, 300, 400, 100); // upper left point (x, y), width, height
+
 // displays the x and y position of the mouse on the canvas
 fill(255) // white text
 text(`${mouseX}, ${mouseY}`, 20, 20);
